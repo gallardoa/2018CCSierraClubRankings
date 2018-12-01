@@ -1,0 +1,63 @@
+<html>
+<head>
+<script src="http://d3js.org/d3.v3.js" charset="utf-8"></script>
+<script src="https://d3js.org/d3-array.v1.min.js"></script>
+<script src="colorbrewer.min.js"></script>
+<script src="https://d3js.org/d3-color.v1.min.js"></script>
+<script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="https://d3js.org/d3-array.v1.min.js"></script>
+<script src="https://d3js.org/d3-collection.v1.min.js"></script>
+<script src="https://d3js.org/d3-color.v1.min.js"></script>
+<script src="https://d3js.org/d3-format.v1.min.js"></script>
+<script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+<script src="https://d3js.org/d3-time.v1.min.js"></script>
+<script src="https://d3js.org/d3-time-format.v2.min.js"></script>
+<script src="https://d3js.org/d3-scale.v2.min.js"></script>
+<script src="d3.legend.js"></script>
+<style type="text/css">
+	body {
+		font-family: sans-serif;
+		font-size: 11px;
+	}
+
+	.axis path,
+	.axis line {
+		fill: none;
+		stroke: #000;
+		shape-rendering: crispEdges;
+	}
+
+	circle {
+		fill: #f00;
+		stroke: #000;
+	}
+
+	.label {
+		text-anchor: middle;
+		font-size: 12px;
+		font-weight: bold;
+		cursor: pointer;
+	}
+</style>
+</head>
+
+<body>
+	<div style = "position: fixed; top: 855px; left: 0px; color: red">
+			<p>
+				Red squares above axis convey the number of <br /> points Carleton could potentially gain out of<br />  total points available. Dark red is for a lot of <br /> available points. Light red is for low amount of <br />available points. Number next to axis labels are <br />total points available in that category.
+			</p>
+		</div>
+
+	<div style = "position: fixed; top: 150px; left: 0px">
+		<p>
+			Sierra Club ranks colleges on how well they<br /> integrate sustainability into their campuses, <br />scoring them on categories such as <br />'Curriculum' or 'Food and Dining'. How does <br />Carleton College compare to similar sized liberal <br />arts colleges, and what are the areas that Carleton<br /> has the most room for improvement? This<br /> visualization shows how  institutions scored in all<br /> the different categories. <br />The categories are ordered by greatest <br />number of points still available for Carleton to<br /> achieve to the least number of available points.<br /> Data obtained from publically available 2018 <br />Sierra Club 'Cool Schools Rankings'.
+		</p>
+	</div>
+	<div id="pointsSVG">
+	</div>
+	<script src="/s/18SierraClubRankings_vis2.js"></script>
+</body>
+
+
+</html>
